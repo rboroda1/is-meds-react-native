@@ -88,6 +88,7 @@ const MedsList2 = ({ route, navigation }) => {
           index: i,
         });
       }
+      //alphabetize options
       newOptions.sort(function (a, b) {
         return a.item.localeCompare(b.item);
       });

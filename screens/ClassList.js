@@ -60,6 +60,7 @@ const ClassList = ({ route, navigation }) => {
         return self.indexOf(value) === index;
       })
       .sort();
+    classes.unshift("NONE");
     console.log(classes);
     return classes;
   };
@@ -97,7 +98,7 @@ const ClassList = ({ route, navigation }) => {
       {isPending && <Text style={globalStyles.loading}>Loading...</Text>}
       {error && <Text style={globalStyles.error}>{error}</Text>}
       <Text style={globalStyles.subtitle}>
-        Full List of Classes ({options.length})
+        Full List of Classes ({options.length - 1})
       </Text>
       {!isPending && options && options.length > 0 && (
         <SelectBox
