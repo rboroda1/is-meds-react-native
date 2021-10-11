@@ -1,14 +1,13 @@
 import React from "react";
 import { StyleSheet, View, Button } from "react-native";
-import Header from "../components/header";
-import MedsList from "./MedsList";
+import ClassList from "./ClassList";
 import { globalStyles, themeColor1, themeColor2 } from "../style/appTheme";
 
-export default function AgentSearch() {
+export default function ClassSearch() {
   return (
     <View style={globalStyles.container}>
       {/* list of meds */}
-      <MedsList />
+      <ClassList />
     </View>
   );
 }

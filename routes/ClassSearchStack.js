@@ -2,7 +2,7 @@ import React from "react";
 import { TouchableOpacity } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 import { createStackNavigator } from "@react-navigation/stack";
-import AgentSearch from "../screens/AgentSearch";
+import ClassSearch from "../screens/ClassSearch";
 
 const Stack = createStackNavigator();
 
@@ -16,7 +16,7 @@ const ClassSearchStack = () => {
     >
       <Stack.Screen
         name="Home"
-        component={AgentSearch}
+        component={ClassSearch}
         options={({ navigation, route }) => ({
           headerLeft: () => (
             <TouchableOpacity

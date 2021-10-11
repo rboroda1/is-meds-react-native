@@ -88,6 +88,9 @@ const MedsList2 = ({ route, navigation }) => {
           index: i,
         });
       }
+      newOptions.sort(function (a, b) {
+        return a.item.localeCompare(b.item);
+      });
       setOptions(newOptions);
     } else {
       setOptions([]);
@@ -183,13 +186,6 @@ const styles = StyleSheet.create({
   },
   header: {
     borderRadius: 6,
-    // backgroundColor: "lavender",
-    // shadowOffset: { width: 1, height: 1 },
-    // shadowColor: "#333",
-    // shadowOpacity: 0.3,
-    // shadowRadius: 2,
-    // marginHorizontal: 4,
-    // marginVertical: 2,
     marginTop: 20,
     fontWeight: "bold",
     padding: 10,
