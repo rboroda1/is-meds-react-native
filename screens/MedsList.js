@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
   Platform,
 } from "react-native";
-import { Divider } from "react-native-elements";
+// import { Divider } from "react-native-elements";
 import SelectBox from "react-native-multi-selectbox";
 import Medication from "../components/medication";
 import useFetch, { refreshLoad } from "../hooks/UseFetch";
